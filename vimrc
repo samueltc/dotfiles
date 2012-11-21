@@ -1,9 +1,8 @@
 syntax on
 filetype plugin indent on
 
+colo desert
 set t_Co=256
-let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-colo railscasts
 
 set hlsearch
 " Press Space to turn off highlighting and clear any message already
@@ -11,17 +10,14 @@ set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 hi ExtraWhitespace ctermbg=Red guibg=Red
-hi Tabs ctermbg=Blue guibg=Blue
-hi ColorColumn ctermbg=Red guibg=#212121
+hi ColorColumn ctermbg=DarkBlue guibg=#212121
 
 au Syntax * syn match ExtraWhitespace /\s\+$/
 au Syntax * syn match Tabs /\t\+/
 
 set colorcolumn=80
 
-set guifont=Inconsolata\ 12
-
-set sw=2 ts=2 expandtab
+set sw=2 ts=2
 
 set clipboard=unnamedplus
 

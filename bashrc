@@ -101,4 +101,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+# testify tab completion
+testify_tab_file=$HOME/bin/testify-bash-completion/testify.sh
+if [ -f $testify_tab_file ];
+then
+    source $testify_tab_file ;
+fi

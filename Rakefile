@@ -1,5 +1,6 @@
 require 'rake'
 require 'erb'
+require 'etc'
 
 task :default => [:install]
 
@@ -9,7 +10,8 @@ task :install do
   Dir['*'].each do |filename|
     next if /Rakefile|README(?:.md|rdoc)|LICENSE/ =~ filename
 
-    pathname = File.join(Dir.home, ".#{filename.sub(/\.erb$/, '')}")
+
+    pathname = File.join(Etc.getpwuid.dir, ".#{filename.sub(/\.erb$/, '')}")
     if File.exist?(pathname)
       if File.identical?(filename, pathname)
         puts "identical #{pathname}"
