@@ -17,12 +17,8 @@ hi ColorColumn ctermbg=Red guibg=#212121
 au Syntax * syn match ExtraWhitespace /\s\+$/
 au Syntax * syn match Tabs /\t\+/
 
-set colorcolumn=80
-
 set guifont=Inconsolata\ 12
 
 set sw=2 ts=2 expandtab
-
-set clipboard=unnamedplus
 
 call pathogen#infect()
