@@ -9,7 +9,9 @@
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
+export PATH=$PATH:$HOME/local/bin
 export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 export GEM_HOME="~/.gem/ruby/1.9.1"
 
 # append to the history file, don't overwrite it
