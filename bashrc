@@ -11,6 +11,7 @@ HISTCONTROL=ignoredups:ignorespace
 
 export PATH=$HOME/local/bin:$PATH
 export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin
+export C_INCLUDE_PATH=$HOME/local/include:$C_INCLUDE_PATH
 export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH
 export GEM_HOME="~/.gem/ruby/1.9.1"
 
