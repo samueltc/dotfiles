@@ -1,9 +1,6 @@
-# Su's Dotfiles
+# Wendy's Dotfiles borrowed from Su
 
-Foo.
 
 ## Installation
 
-    git clone git://github.com/zhangsu/dotfiles.git ~/proj/dotfiles
-    cd ~/proj/dotfiles
     rake

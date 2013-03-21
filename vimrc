@@ -1,28 +1,10 @@
 syntax on
 filetype plugin indent on
-
-set t_Co=256
-let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-colo railscasts
-
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set nu
+set nowrap
 set hlsearch
-" Press Space to turn off highlighting and clear any message already
-" displayed.
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-
-hi ExtraWhitespace ctermbg=Red guibg=Red
-hi Tabs ctermbg=Blue guibg=Blue
-hi ColorColumn ctermbg=Red guibg=#212121
-
-au Syntax * syn match ExtraWhitespace /\s\+$/
-au Syntax * syn match Tabs /\t\+/
-
-set colorcolumn=80
-
-set guifont=Inconsolata\ 12
-
-set sw=2 ts=2 expandtab
 
 set clipboard=unnamedplus
-
-call pathogen#infect()
