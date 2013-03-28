@@ -6,5 +6,7 @@ set expandtab
 set nu
 set nowrap
 set hlsearch
+set ignorecase
 
 set clipboard=unnamedplus
+colorscheme candy
