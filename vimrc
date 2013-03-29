@@ -7,6 +7,7 @@ set nu
 set nowrap
 set hlsearch
 set ignorecase
+set mouse=a
 
 set clipboard=unnamedplus
 colorscheme candy
