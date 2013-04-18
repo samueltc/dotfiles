@@ -8,6 +8,7 @@ set nowrap
 set hlsearch
 set ignorecase
 set mouse=a
-
+set cursorline
 set clipboard=unnamedplus
-colorscheme candy
+set t_Co=256
+colorscheme xoria256
