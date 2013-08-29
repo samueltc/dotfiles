@@ -7,7 +7,6 @@ set nu
 set nowrap
 set hlsearch
 set ignorecase
-set mouse=a
 set cursorline
 set clipboard=unnamedplus
 set t_Co=256
