@@ -10,4 +10,3 @@ set ignorecase
 set cursorline
 set clipboard=unnamedplus
 set t_Co=256
-colorscheme xoria256
